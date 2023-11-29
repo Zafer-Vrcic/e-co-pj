@@ -25,6 +25,6 @@ for the font style:@import url("https://fonts.googleapis.com/css2?family=Poppins
 APİ:"https://fakestoreapi.com/products"
 <h1>Project Gif</h1>
 
-<img src="e-co.gif" alt="">
+<img src="e-co1.gif" alt="">
 
 
