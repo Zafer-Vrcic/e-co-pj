@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,300;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1.4rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+header input{
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    padding: 0.5rem 1.4rem;
+}
+
+header div{
+    display: flex;
+    gap: 1rem;
+}
+
+header div button{
+    border: none;
+    padding: .5rem 1.4rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+   
+}
+
+header div button:nth-child(1) {
+    background-color: black;
+}
+header div button:nth-child(2){
+    background-color: blueviolet;
+}
+header div button:nth-child(3){
+    background-color: orangered;
+}
+/* category */
+.category-wrapper{
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+}
+.categories{
+    display: flex;
+    gap: 8.4rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+
+}
+.category{
+    min-width: 5rem;
+    max-width: 8rem;
+    height: 7rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+ 
+}
+
+.category img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+    border-radius: .5rem;
+   
+    
+}
+.category span{
+    position: relative;
+    font-style: italic;
+    bottom: .5rem;
+    margin-top: 1rem;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    
+    border-radius: 2rem;
+    padding: .2rem .5rem ;
+    border: .5rem;
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+
+/* products*/
+.product-wrapper{
+    padding: 50px;
+    text-align: center;
+    background-color: #FFFFFF;
+background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.4rem;
+    align-items: flex-start;
+   
+}
+.product{
+    width: 15rem;
+    height: 25rem;
+    box-shadow: 1px 12px 19px 7px #0000004a;
+    padding: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    
+}
+.product img {
+    width: 12.5rem;
+    height: 12.5rem;
+    object-fit: contain;
+    border: .09rem solid black;
+    border-radius: .5rem;
+    padding: .2rem;
+}
+.product p{
+    font-size: 1rem;
+}
+
+.product-action{
+    display: flex;
+    background-color: black;
+    color: white;
+    color: 5px;
+    padding: 5px;
+    width: 100%;
+    border-radius: .5rem;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.product-action button{
+    background-color: purple;
+    color: orangered;
+    border: none;
+    border-radius: .5rem;
+    padding: .2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* modal backet when working structer */
+.modal-wrapper{
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.575);
+    z-index: 1000;
+    width: 100vw;
+    height:100vh ;
+    top: 0;
+    left: 0;
+    display: none;
+    place-items: center;
+}
+
+.modal{
+    background-color: white;
+    width:80%;
+    height: 60%;
+    padding: .5rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal img {
+    width: 3rem;
+    cursor: pointer;
+}
+.modal-list{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    overflow-y: auto;
+    margin: .2rem .5rem;
+    padding: .2rem .5rem;
+}
+
+.total{
+    text-align: center;
+
+}
+
+.active{
+    display: grid;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:2px solid gray;
+    width: 100%;
+    gap: 1rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    box-shadow: 0px 0px 0.2rem .1rem rgba(128, 128, 128, 0.575);
+
+}
+
+.list-item img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.list-item .price{
+    color: red;
+}
+.list-item h4{
+    font-size: .9rem;
+}
+.list-item p {
+    font-weight: 800;
+    font-size: .7rem;
+}
+
+.delete-button{
+    background-color: orangered;
+    border: none;
+    padding: .2rem .5rem;
+    border-radius: .2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#total-price{
+    color: green;
+    font-weight: 700;
+}
+
